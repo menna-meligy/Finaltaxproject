@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {routingComponents , AppRoutingModule} from './app-routing.module';
+import { ThirdpageComponent } from './thirdpage/thirdpage.component';
+import { FourthpageComponent } from './fourthpage/fourthpage.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    ThirdpageComponent,
+    FourthpageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
